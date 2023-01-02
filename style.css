@@ -1,3 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: purple;
+}
+
+h2 {
+    display: block;
+    position: relative;
+    left: 10px;
+    font-size: 30px;
+    padding: 15px 0 15px 10px;
+    color: rgb(65, 24, 103);
+}
+
+.cvece {
+    overflow: hidden;
+}
+
+.cvece label {
+    position: relative;
+    left: 10px;
+    float: right;
+    width: 30%;
+    margin: 10px 0 10px 0;
+    padding: 5px 0px 0px 10px;
+    font-size: 18px;
+}
+
+input[type='number'] {
+    position: relative;
+    left: 10px;
+    margin: 10px 0 10px 0;
+    padding: 5px 0 5px 10px;
+    width: 70%;
+    float: left;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.pokloni {
+    overflow: hidden;
+}
+
+input[type='checkbox'] {
+    display: block;
+    width: 5%;
+    float: left;
+    height: 15px;
+    margin: 12px 0px 10px 0px;
+}
+
+.pokloni label {
+    display: block;
+    width: 95%;
+    float: left;
+    margin: 8px 0px 10px 0px;
+    font-size: 18px;
+}
+
+input[type='submit'], input[type='reset'] {
+    position: relative;
+    left: 20px;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: rgb(2, 176, 176);
+    border: 2px solid aqua;
+    color: rgb(34, 34, 34);
+    margin-top: 10px;
+}
+
+input[type='submit']:hover, input[type='reset']:hover {
+    background-color: purple;
+    color: beige;
+}
 .flower {
-    width: 50px;
+    margin: 10px 0px 10px 10px;
+    width: 80px;
+    border: 3px solid rgba(218, 152, 174, 0.755);
+    border-radius: 50%;
+}
+
+.placanje {
+    width: 40%;
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: rgb(255, 164, 130);
+}
+
+.placanje label {
+    display: inline-block;
+    margin: 10px 0px 10px 5px;
+    font-size: 25px;
+}
+
+input[type='radio'] {
+    height: 15px;
+    margin-left: 15px;
+}
+
+#porudzbina p {
+    font-size: 20px;
+    margin-left: 15px;
 }
