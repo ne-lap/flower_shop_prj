@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cvece">
+        <h2>Odaberite cveće:</h2>
+
+        <input type="number" name="ruze" id="ruze" placeholder="Cena po cvetu je 150 dinara." min="0" step="1">
+        <label for="ruze">Ruže</label>
+
+        <input type="number" name="ljiljani" id="ljiljani" placeholder="Cena po cvetu je 120 dinara." min="0" step="1">
+        <label for="ljiljani">Ljiljani</label>
+
+        <input type="number" name="gerberi" id="gerberi" placeholder="Cena po cvetu je 70 dinara." min="0" step="1">
+        <label for="gerberi">Gerberi</label>
+    </div>
+
+    <div class="pokloni">
+        <h2>Dodatni pokloni:</h2>
+        <input type="checkbox" name="bombonjera" id="bombonjera">
+        <label for="bombonjera">Bombonjera</label>
+
+        <input type="checkbox" name="cokolada" id="cokolada">
+        <label for="cokolada">Čokolada</label>
+
+        <input type="checkbox" name="sampanjac" id="sampanjac">
+        <label for="sampanjac">Šampanjac</label>
+    </div>
+
+    <div class="placanje">
+        <input type="radio" name="placanje" name="kes" id="kes" value="1">
+        <label for="kes">Keš</label>
+        <input type="radio" name="placanje" name="kartica" id="kartica" value="2">
+        <label for="kartica">Kartica</label>
+    </div>
+    <div class="dugme">
+        <input type="submit" value="Izračunaj" id="submit">
+        <input type="reset" value="Resetuj" id="reset">
+    </div>
+
+    <div id="porudzbina">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
