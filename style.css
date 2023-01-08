@@ -106,3 +106,13 @@ input[type='radio'] {
     font-size: 20px;
     margin-left: 15px;
 }
+
+#cp {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#cena {
+    margin-top: 10px;
+}

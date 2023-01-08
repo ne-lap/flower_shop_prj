@@ -24,7 +24,6 @@ btnSubmit.addEventListener('click', () => {
     let picContainerRose = document.createElement('div');
     porudzbina.append(picContainerRose);
     for(let i=1; i<=ruzaNo; i++) {
-        
         let img = document.createElement('img');
         img.src = 'photos/rose.png';
         img.classList.add('flower');
@@ -70,26 +69,36 @@ btnSubmit.addEventListener('click', () => {
         porudzbina.append(poklon);
         sum += 500;
     }
-
-    let placanje = document.querySelector(`input[type="radio"]:checked`).value;
-
-    if(placanje == 1) {
+    if(sum == 0) {
         let cena = document.createElement('p');
-        cena.textContent = `Cena je ${sum}`;
-        porudzbina.append(cena)
+        cena.setAttribute('id','cena');
+        cena.textContent = `Niste odabrali proizvode.`;
+        porudzbina.append(cena);
     }
     else {
-        if(sum > 2000) {
+        let placanje = document.querySelector(`input[type="radio"]:checked`).value;
+        if(placanje == 1) {
             let cena = document.createElement('p');
-            let cenaPopust = document.createElement('p');
-            cena.textContent = `Cena je ${sum}`;
-            cenaPopust.textContent = `Cena sa popustom je ${sum*0.9}`;
-            porudzbina.append(cena, cenaPopust);
+            cena.setAttribute('id','cena');
+            cena.textContent = `Cena je ${sum} dinara.`;
+            porudzbina.append(cena);
         }
         else {
-            let cena = document.createElement('p');
-            cena.textContent = `Cena je ${sum}`;
-            porudzbina.append(cena);
+            if(sum > 2000) {
+                let cena = document.createElement('p');
+                let cenaPopust = document.createElement('p');
+                cena.setAttribute('id','cena');
+                cenaPopust.setAttribute('id','cp');
+                cena.textContent = `Cena bez popusta je ${sum} dinara.`;
+                cenaPopust.textContent = `Cena sa popustom je ${sum*0.9} dinara.`;
+                porudzbina.append(cena, cenaPopust);
+            }
+            else {
+                let cena = document.createElement('p');
+                cena.setAttribute('id','cena');
+                cena.textContent = `Cena je ${sum} dinara.`;
+                porudzbina.append(cena);
+            }
         }
     }
     btnSubmit.disabled = true;
